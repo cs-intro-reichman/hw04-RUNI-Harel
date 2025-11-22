@@ -18,9 +18,32 @@ public class KeywordsDetector {
         detectAndPrint(sentences, keywords);
     }
 
+    public static void stringSplitter(String[] sentences){
+        //String[]
+        for(int i=0;i<sentences.length;i++){
+            String oneSentence=sentences[i];
+            //String[] s2 = s.split(" ")
+            for(int j=0;j<oneSentence.length();j++){
+                System.out.println(oneSentence.substring(oneSentence.indexOf("")));
+            }
+            System.out.println(sentences[i].substring(i,sentences[i].indexOf("")));
+        }
+    }
+
     // Iterates through all the sentences.
     // If a sentence contains one or more of the kewords, prints it.
     public static void detectAndPrint(String[] sentences, String[] keywords) {
         // Replace this comment with your code
+        for(int i=0;i<sentences.length;i++){
+            String oneSentence = sentences[i]; 
+            String[] allWords = oneSentence.split(" ");
+            for(int j=0;j<allWords.length;j++){
+                for(int k=0;k<keywords.length;k++){
+                    if(allWords[j].toLowerCase().equals(keywords[k])){
+                        System.out.println(allWords[j]);
+                    }
+                }
+            }
+        }
     }
 }
