@@ -28,7 +28,7 @@ public class KeywordsDetector {
             String[] allWords = oneSentence.split(" ");
             for(int j=0;j<allWords.length;j++){
                 for(int k=0;k<keywords.length;k++){
-                    if(allWords[j].toLowerCase().equals(keywords[k])){
+                    if(allWords[j].toLowerCase().equals(keywords[k].toLowerCase())){
                         //System.out.println(allWords[j]);
                         System.out.println(oneSentence);
                     }
