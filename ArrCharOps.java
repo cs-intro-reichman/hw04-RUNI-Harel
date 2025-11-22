@@ -242,8 +242,8 @@ public class ArrCharOps {
         }
         for (int i=0;i<shorterLen;i++){
             if(str1.charAt(i)!=str2.charAt(i)){
-                System.out.println((int)(str1.charAt(i)));
-                System.out.println((int)(str2.charAt(i)));
+                //System.out.println((int)(str1.charAt(i)));
+                //System.out.println((int)(str2.charAt(i)));
                 if ((int)(str1.charAt(i))<(int)(str2.charAt(i))) {
                     return -1;
                 }else{
